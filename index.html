@@ -58,15 +58,17 @@
             background: url('Images/Header_Photo.jpg') no-repeat center center/cover;
             height: 60vh;
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align items to the start (top) of the header */
             justify-content: center;
             color: #fff;
             text-shadow: 2px 2px 4px #000;
+            padding-top: 20px; /* Optional: Add padding to adjust vertical spacing */
         }
 
         header h1 {
             font-size: 3em;
-            margin-top: -20px; /* Move the text upwards slightly */
+            margin-top: 0; /* Remove any top margin */
+            padding-top: 20px; /* Add padding to move it up */
         }
 
         /* Main Content */
