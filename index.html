@@ -48,14 +48,14 @@
 
         /* Header Section */
         header {
-            background: url('Images/Header_Photo2.jpg') no-repeat center center/cover;
+            background: url('Images/Header_Photo.jpg') no-repeat center center/cover;
             height: 60vh;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #fff;
             text-shadow: 2px 2px 4px #000;
-            background-position: center 20px; /* Moves the image down by X pixels */
+            background-position: center 5px; /* Moves the image down by X pixels */
         }
 
         header h1 {
@@ -198,15 +198,20 @@
     <div class="container">
 
         <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p style="margin-bottom: 20px;">
-                I'm Chandler Hutchens, an Aerospace Engineer with a passion for space systems! I enjoy working on complex problems, and being apart of a team to solve them. I've worked on a varity of projects that have honed my skills in the systems arcitecture, verification and validation, and mechanical/electrical design. 
-            </p>
-            <p>
-                
-                In my free time, I love watching movies, playing board games, and hiking! I enjoy traveling and meeting new people around the world, which offers new perspectives and motivations in my professional endeavors. 
-            </p>
+        <section id="about" style="display: flex; align-items: flex-start;">
+            <!-- Image on the Left -->
+            <img src="Images/About_Me.jpg" alt="Chandler Hutchens" style="width: 200px; height: auto; margin-right: 20px; border-radius: 50%;">
+
+            <!-- Text on the Right -->
+            <div>
+                <h2>About Me</h2>
+                <p style="margin-bottom: 20px;">
+                    I'm Chandler Hutchens, an Aerospace Engineer with a passion for space systems! I enjoy working on complex problems, and being a part of a team to solve them. I've worked on a variety of projects that have honed my skills in systems architecture, verification and validation, and mechanical/electrical design.
+                </p>
+                <p>
+                    In my free time, I love watching movies, playing board games, and hiking! I enjoy traveling and meeting new people around the world, which offers new perspectives and motivations in my professional endeavors.
+                </p>
+            </div>
         </section>
 
         <!-- Projects Section -->
