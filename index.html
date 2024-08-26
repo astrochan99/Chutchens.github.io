@@ -337,12 +337,14 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                         </video>
                     </div>
                     
-                    <script>
-                        // Select the specific video by its ID
-                        const slowVideo = document.getElementById('slow-video');
+                   <script>
+                        // Select all video elements
+                        const videos = document.querySelectorAll('slow-video');
 
-                        // Set playback rate to 0.25x for the selected video
-                        slowVideo.playbackRate = 0.25;
+                        // Set playback rate to 0.25x for each video
+                        videos.forEach(video => {
+                            video.playbackRate = 0.25;
+                        });
                     </script>
 
                     <!-- Project Report -->
