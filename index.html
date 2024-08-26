@@ -323,29 +323,30 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
 
                     <!-- Videos -->
                     <div class="videos" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                        <video id="slow-video" controls autoplay muted loop style="width: 30%; max-width: 300px;">
+                        <video class="slow-video" controls autoplay muted loop style="width: 30%; max-width: 300px;">
                             <source src="u_video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <video id="slow-video" controls autoplay muted loop style="width: 30%; max-width: 300px;">
+                        <video class="slow-video" controls autoplay muted loop style="width: 30%; max-width: 300px;">
                             <source src="v_video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <video id="slow-video" controls autoplay muted loop style="width: 30%; max-width: 300px;">
+                        <video class="slow-video" controls autoplay muted loop style="width: 30%; max-width: 300px;">
                             <source src="y_video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    
-                   <script>
-                        // Select all video elements
-                        const videos = document.querySelectorAll('slow-video');
+
+                    <script>
+                        // Select all video elements with the class "slow-video"
+                        const videos = document.querySelectorAll('.slow-video');
 
                         // Set playback rate to 0.25x for each video
                         videos.forEach(video => {
                             video.playbackRate = 0.25;
                         });
                     </script>
+
 
                     <!-- Project Report -->
                     <a href="Hutchens_561_Final_Project.pdf" download="Hutchens_561_Final_Project.pdf" style="display: block; width: fit-content; margin: 20px auto 0; padding: 15px 30px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
