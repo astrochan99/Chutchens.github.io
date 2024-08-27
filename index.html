@@ -219,7 +219,7 @@
             <div>
                 <h2>About Me</h2>
                 <p style="margin-bottom: 20px;">
-                    I'm Chandler Hutchens, an Aerospace Engineer with a passion for space systems! I enjoy working on complex problems, and being a part of a team to solve them. I've worked on a variety of projects that have honed my skills in systems architecture, verification and validation, and mechanical/electrical design.
+                    I'm Chandler Hutchens, an Aerospace Engineer, with a passion for space systems! I enjoy working on complex problems, and being a part of a team to solve them. I've worked on a variety of projects that have honed my skills in systems architecture, verification and validation, and mechanical/electrical design.
                 </p>
                 
                 <p style="margin-bottom: 20px;">
@@ -235,7 +235,7 @@
         <!-- Resume Section -->
         <section id="resume"> 
             <h2>Resume</h2>
-            <p style="margin-bottom: 20px;">
+            <p style="text-align: justify; margin-bottom: 20px;">
                     "Aerospace engineer with B.S.E and M.S. degrees, skilled in systems engineering, research, and project management, with
 proficiency in Model Based Systems Engineering, integration, and a strong record with flight hardware in the space industry"
                 </p>
@@ -251,7 +251,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                 <!-- Work Project 1 -->
                 <div class="project">
                     <h3>DORA</h3>
-                    <p>
+                    <p style="text-align: justify; margin-bottom: 20px;">
                         This project sucked the life out of everyone working on it. 
                     </p>
                     <a href="https://loco.lab.asu.edu/research/dora/" target="_blank">Program Website</a>
@@ -259,7 +259,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                 <!-- Work Project 2 -->
                 <div class="project">
                     <h3>Lightcube</h3>
-                    <p>
+                    <p style="text-align: justify; margin-bottom: 20px;">
                         Ugh
                     </p>
                     <a href="https://lightcube.space/" target="_blank">Program Website</a>
@@ -267,7 +267,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                 <!-- Work Project 3 -->
                 <div class="project">
                     <h3>SPARCS</h3>
-                    <p>
+                    <p style="text-align: justify; margin-bottom: 20px;">
                         AHAHH
                     </p>
                     <a href="https://sparcs.asu.edu/" target="_blank">View More</a>
@@ -275,7 +275,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                 <!-- Work Project 4 -->
                 <div class="project">
                     <h3>Thermal Vacuum Chamber</h3>
-                    <p>
+                    <p style="text-align: justify; margin-bottom: 20px;">
                         AHAHH
                     </p>
                 </div>
@@ -297,8 +297,8 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                         </div>
 
                         <!-- Paragraph -->
-                        <p style="margin-bottom: 20px">
-                            This was the final project for MAE565 Rocket Propulsion with Professor Werner Dahm. The project was perform an analysis of the RS-25 propulsion system and calculate perameters such as Mach #, pressure, temperature, and flow speed in each of the various pumps. After ariving at the nozzle, thurst, coefficient of thrust, and specific impulse could be determined. The full report can be downloaded below, with the calculating spreadsheet.
+                        <p style="text-align: justify; margin-bottom: 20px;">
+                            This was the final project for MAE565 Rocket Propulsion with Professor Werner Dahm. The project was perform an analysis of the RS-25 propulsion system and calculate perameters such as Mach #, pressure, temperature, and flow speed in each of the various pumps. After arriving at the nozzle, thrust, coefficient of thrust, and specific impulse could be determined. The full report can be downloaded below, with the calculating spreadsheet.
                         </p>
                         
                         <div style="display: flex; justify-content: center; gap: 20px;">
@@ -314,11 +314,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                 <!-- Project 2 -->
                 <div class="project">
                     <h3>Modeling of a Mixing Chamber with the Navier-Stokes Equations</h3>
-                    <p style="margin-bottom: 20px;">
-                        This was the final project for MAE561 Computational Fluid Dynamics with Professor Marcus Herrmann. The project was to take a mixing chamber, with given inital and boundary conditions, and model it using the continuity and Navier-Stokes equtions. I solved for the u-velocity (left), v-velocity (middle), and mass fraction (right), each resulting in a ten second video shown below. The full report can be downloaded below which includes the inital conditions, derivations, results, and the MATLAB code. 
-
-                    </p>
-
+                   
                     <!-- Videos -->
                     <div class="videos" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                         <video class="slow-video" controls autoplay muted loop style="width: 30%; max-width: 300px;">
@@ -344,15 +340,41 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                             video.playbackRate = 0.25;
                         });
                     </script>
+                    
+                    <p style="text-align: justify; margin-bottom: 20px;">
+                        This was the final project for MAE561 Computational Fluid Dynamics with Professor Marcus Herrmann. The project was to take a mixing chamber, with given inital and boundary conditions, and model it using the continuity and Navier-Stokes equtions. I solved for the u-velocity (left), v-velocity (middle), and mass fraction (right), each resulting in a ten second video shown below. The full report can be downloaded below which includes the inital conditions, derivations, results, and the MATLAB code. 
 
+                    </p>
 
                     <!-- Project Report -->
                     <a href="Hutchens_561_Final_Project.pdf" download="Hutchens_561_Final_Project.pdf" style="display: block; width: fit-content; margin: 20px auto 0; padding: 15px 30px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
                         Report
                     </a>
                 </div>
+
+                 <!-- Project 3 -->
+                <div class="project" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                    <h3>Comparing Turbulence Models for Two-Dimensional Flow Over a Backward-Facing Step</h3>
+
+                    <!-- Images -->
+                    <div style="display: flex; justify-content: center; gap: 10px;">
+                        <img src="Images/Step.png" alt="Pro" style="width: 300px; height: auto;">
+                        <img src="Images/Turb_plot.png" alt="Graph" style="width: 300px; height: auto;">
+                        <img src="Images/Comparison.png" alt="Graph" style="width: 300px; height: auto;">
+                    </div>
+
+                    <!-- Paragraph -->
+                    <p style="text-align: justify; margin-bottom: 20px;">
+                        This was the final project for MAE575 Turbulence with Professor Werner Dahm. This project compared three turbulence models in ANSYS Fluent agaist eachother and expeirmental data from Driver and Seegmiller (1995) for a backward-facing step. These models were compared with a coarse, medium, and fine mesh, against parameters such as Reynolds stress. The full report can be downloaded below, which includes the initial conditions and ANSYS set up, equations, results, and the MATLAB code.
+                    </p>
+
+                    <!-- Centered Report Button -->
+                    <a href="Hutchens_Chandler_575_Report.pdf" download="Hutchens_Chandler_575_Report.pdf" style="display: block; padding: 15px 30px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                        Report
+                    </a>
+                </div>                   
                     
-                <!-- Project 3 -->
+                <!-- Project 4 -->
                 <div class="project" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
                     <h3>VECTOR</h3>
 
@@ -363,7 +385,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                     </div>
 
                     <!-- Paragraph -->
-                    <p style="margin-bottom: 20px;">
+                    <p style="text-align: justify; margin-bottom: 20px;">
                         This was the final for AEE480 Space Systems Design, Aerospace Engineering capstone, with Professor Charles Boehmer. I was in charge of the mission and system-level requirements, payload, ADCS, EPS, as well as power, cost, and mass budgets. The CDR presentation and the final report can be downloaded below.
                     </p>
 
@@ -378,7 +400,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                     </div>
                 </div>
                     
-                <!-- Project 4 -->
+                <!-- Project 5 -->
                 <div class="project" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
                     <h3>Comparison of Vortex Identification Methods of NACA0012</h3>
 
@@ -389,7 +411,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                     </div>
 
                     <!-- Paragraph -->
-                    <p style="margin-bottom: 20px;">
+                   <p style="text-align: justify; margin-bottom: 20px;">
                         This was the final project for MAE598 Analysis and Modeling of Fluid Flows with Professor Jeonglae Kim. I obtained wind tunnel data of a NACA0012 airfoil from the experiment of Chow, J.S., Zilliac, G.G., and Bradshaw, P (1997), and used this data to compare five vortex identification methods at three positions along the airfoil. The full report can be downloaded below, which includes the initial conditions, equations, results, and the MATLAB code.
                     </p>
 
@@ -399,7 +421,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                     </a>
                 </div>
 
-                <!-- Project 5 -->
+                <!-- Project 6 -->
                 <div class="project" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
                     <h3>Ram/Scramjet Propulsion System Analysis</h3>
 
@@ -410,7 +432,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                     </div>
 
                     <!-- Paragraph -->
-                    <p style="margin-bottom: 20px;">
+                    <p style="text-align: justify; margin-bottom: 20px;">
                         This was the final project for MAE563 Aircraft Propulsion with Professor Werner Dahm. The project was to construct a MATLAB program to calculate the thermodynamic cycle of the ram/scramjet for a list of inputs. Upon completing the cycle, various parameters were solved for to better understand the engine performance for analysis or design. The full report can be downloaded below, which includes the initial conditions, equations, results, and the MATLAB code.
                     </p>
 
@@ -419,8 +441,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
                         Report
                     </a>
                 </div>
-
-
+ 
             </div>
         </section>
 
@@ -448,7 +469,7 @@ proficiency in Model Based Systems Engineering, integration, and a strong record
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Chandler Hutchens. All rights reserved.</p>
+        <p>&copy; 2024 Chandler Hutchens. All Rights Reserved.</p>
     </footer>
 
 </body>
