@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Chandler Hutchens</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: "Times New Roman", Times, serif; 
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: none; /* Ensure no background color is set */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+            
+        nav a:hover {
+            color: #ddd;
+        }
+
+        /* Header Section */
+        header {
+            position: relative;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+            overflow: hidden; /* Ensures the video doesn't spill outside the header */
+        }
+
+        #header-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto; /* Adjust width to auto to fill the height */
+            height: 100%; /* Ensure the video covers the full height */
+            transform: translate(-50%, -50%); /* Center the video */
+            object-fit: cover; /* Ensures the video covers the entire header area without stretching */
+            z-index: -1; /* Places the video behind the text */
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            z-index: 1; /* Ensures the text appears on top of the video */
+            text-align: center;
+        }
+        
+        /* Dropdown Menu Styling */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Main Content */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+        }
+
+        /* Projects List */
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            margin-bottom: 10px;
+        }
+
+        .project a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            margin-bottom: 5px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .projects {
+                flex-direction: column;
+            }
+
+            .project {
+                width: 100%;
+            }
+
+            nav .container {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Chandler Hutchens - Aerospace Engineer</a>
+            </div>
+            <div class="nav-links">
+                <a href="#travel">Travel</a>
+
+                <!-- Dropdown Menu -->
+                <div class="dropdown">
+                    <button class="dropbtn">Portfolio</button>
+                    <div class="dropdown-content">
+                        <a href="Main.html">Home</a>
+                        <a href="Engineering.html">Engineering Portfolio</a>
+                        <a href="Lifestyle.html">Lifestyle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <video autoplay muted loop id="header-video" style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="header-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Welcome To My Engineering Portfolio!</h1>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        
+        <!-- Travel Section -->
+        <section id="travel">
+            <h2>Travel</h2>
+            <div class="projects">
+                
+                <!-- Trip 1 -->
+                <div class="project" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                    <h3 style="align-self: flex-start;">Camino Del Norte - 2024</h3>
+                    
+                    <p style="text-align: justify; margin-bottom: 10px;">
+                        Trip with Dad  
+                    </p>
+                    
+                    <ul style="align-self: flex-start; margin-left: 20px">
+                        <li>Total Length: 830km (500 miles) </li>
+                        <li>Time: 32 Days</li>
+                    </ul>
+                    
+                </div>
+                
+                <!-- Trip 2 -->
+                <div class="project" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                    <h3 style="align-self: flex-start;">Japan - 2023</h3>
+                    
+                    <p style="text-align: justify; margin-bottom: 10px;">
+                        Trip with family 
+                    </p>
+                    
+                </div>
+                                
+                <!-- Trip 3 -->
+                <div class="project" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                    <h3 style="align-self: flex-start;">Europe - 2019</h3>
+                    
+                    <p style="text-align: justify; margin-bottom: 10px;">
+                        Trip with school
+                    </p>
+                    
+                </div>
+                    
+                
+            </div>
+        </section>
+
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chandler Hutchens. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
